@@ -252,6 +252,10 @@ p {
     width: 80%;
     margin: 1rem 0 0 1rem;
   }
+  .swiper-slide .css_syntax {
+    width: 80%;
+    margin: 1rem 0 0 1rem;
+  }
   .swiper-slide .addcss_img {
     width: 85%;
     margin: 2rem 0 0 1rem;
