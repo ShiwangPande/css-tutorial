@@ -80,7 +80,6 @@ function Home() {
             <div className="container">
               <h1>How CSS works?</h1>
               <hr />
-              <img src={css} />
               <ul>
                 <li>CSS works by selecting HTML elements and applying styles to them. It uses selectors to identify which HTML elements the style should be applied to and then applies a set of rules that define the appearance of the element.</li>
                 <li>

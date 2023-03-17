@@ -244,6 +244,14 @@ p {
     margin: 0.5rem;
     font-size: 1.5rem;
   }
+  .swiper-slide .img_css {
+    width: 50%;
+    margin: 1rem 0 0 1rem;
+  }
+  .swiper-slide .history {
+    width: 80%;
+    margin: 1rem 0 0 1rem;
+  }
   .swiper-slide .addcss_img {
     width: 85%;
     margin: 2rem 0 0 1rem;
