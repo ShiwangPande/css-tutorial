@@ -191,7 +191,7 @@ p {
 }
 .next {
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
   right: 0;
   font-size: 3rem;
   padding: 0.5rem;
