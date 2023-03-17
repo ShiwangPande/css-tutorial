@@ -5,13 +5,13 @@ import Editor from "react-simple-code-editor";
 import { highlight, languages } from "prismjs/components/prism-core";
 import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
-import "prismjs/themes/prism.css"; //Example style, you can use another
-import "./styles.css";
+import "prismjs/themes/prism.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import styled from "styled-components";
 import "./Home.css";
+import cssposition from "./img/cssposition.png";
 
 // import required modules
 import { Mousewheel, Pagination } from "swiper";
@@ -75,10 +75,10 @@ function Position() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="css_position"></div>
-            <div className="container_largeest">
-              <h1 style={{ marginTop: "50px" }}>CSS Layout - The position Property </h1>
+            <div className="container">
+              <h1>CSS Layout - The position Property </h1>
               <hr />
+              <img className="cssposition" src={cssposition} />
               <ul>
                 <li>
                   The position property specifies the type of positioning method
@@ -98,21 +98,22 @@ function Position() {
                   <li>absolute</li>
                   <li>sticky</li>
                 </ul>
+              </ul>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+
+            <div className="container">
+              <h1>position: static; </h1>
+              <hr />
+              <ul>
+
                 <li>
                   Elements are then positioned using the top, bottom, left, and
                   right properties. However, these properties will not work
                   unless the position property is set first. They also work
                   differently depending on the position value.
                 </li>
-              </ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="css_position"></div>
-            <div className="container_largeest">
-              <h1>position: static; </h1>
-              <hr />
-              <ul>
                 <li>HTML elements are positioned static by default.</li>
                 <li>
                   Static positioned elements are not affected by the top,
@@ -142,8 +143,8 @@ function Position() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_position"></div>
-            <div className="container_largeest">
+
+            <div className="container">
               <h1>position: fixed;</h1>
               <hr />
               <div
@@ -189,8 +190,8 @@ function Position() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_position"></div>
-            <div className="container_largeest">
+
+            <div className="container">
               <h2>position: absolute;</h2>
               <hr />
               <ul>
@@ -223,8 +224,8 @@ function Position() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="css_position"></div>
-            <div className="container_largeest">
+
+            <div className="container">
               <h2>position: absolute;</h2>
               <hr />
               <ul>
@@ -245,7 +246,7 @@ function Position() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_position"></div>
+
             <div className="container">
               <h2>position: sticky;</h2>
               <hr />

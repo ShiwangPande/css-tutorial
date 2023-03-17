@@ -5,12 +5,11 @@ import Editor from 'react-simple-code-editor';
 import { highlight, languages } from 'prismjs/components/prism-core';
 import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-javascript';
-import 'prismjs/themes/prism.css'; //Example style, you can use another
-import "./styles.css"
+import 'prismjs/themes/prism.css';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
+import csscolor from "./img/csscolor.png"
 import "./Home.css";
 
 // import required modules
@@ -89,10 +88,10 @@ function Color() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div className="css_color"></div>
                         <div className="container">
                             <h1>CSS Colors</h1>
                             <hr />
+                            <img className="css_color" src={csscolor} />
                             <ul>
                                 <li>Colors are specified using predefined: </li>
                             </ul>
@@ -107,7 +106,7 @@ function Color() {
 
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide> <div className="css_color"></div>
+                    <SwiperSlide>
                         <div className="container">
                             <h1>CSS Color Names</h1>
                             <hr />
@@ -127,7 +126,7 @@ function Color() {
                             </ul>
                         </div></SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
+
                         <div className="container">
                             <h1>CSS Background Color</h1>
                             <hr />
@@ -152,7 +151,7 @@ function Color() {
 
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
+
                         <div className="container">
                             <h1> CSS Text Color</h1>
                             <hr />
@@ -188,7 +187,7 @@ function Color() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
+
                         <div className="container">
                             <h1>CSS Border Color</h1>
                             <hr />
@@ -213,7 +212,7 @@ function Color() {
 
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
+
                         <div className="container_large">
                             <h1>CSS Color Values</h1>
                             <hr />
@@ -229,7 +228,7 @@ function Color() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
+
                         <div className="container">
                             <h1 style={{ margin: "1rem" }}>CSS Backgrounds</h1>
                             <hr />
@@ -255,7 +254,7 @@ function Color() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
+
                         <div className="container_large">
                             <h1>CSS background-color</h1>
                             <hr />
@@ -277,10 +276,10 @@ function Color() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
                         <div className="container_large">
                             <h1>Opacity / Transparency</h1>
                             <hr />
+                            <img className="css_color" src={csscolor} alt="" />
                             <ul>
                                 <li> The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:</li>
                             </ul>
@@ -305,7 +304,7 @@ function Color() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
+
                         <div className="container_large">
                             <h1>CSS Background Image</h1>
                             <hr />
@@ -331,7 +330,7 @@ function Color() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
+
                         <div className="container_large">
                             <h1>CSS Background Image Repeat</h1>
                             <hr />
@@ -371,7 +370,7 @@ function Color() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
+
                         <div className="container_large">
                             <h1>CSS background-repeat: no-repeat</h1>
                             <hr />
@@ -399,7 +398,7 @@ function Color() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_color"></div>
+
                         <div className="container_large">
                             <h1>CSS background-position</h1>
                             <hr />

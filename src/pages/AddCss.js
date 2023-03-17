@@ -1,15 +1,16 @@
 import React from "react";
-import "./AddCss.css";
+// import "./AddCss.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Editor from 'react-simple-code-editor';
 import { highlight, languages } from 'prismjs/components/prism-core';
 import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/themes/prism.css'; //Example style, you can use another
-import "./styles.css"
+import "./Home.css"
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import addcss from "./img/addcss.png"
 import Cssfontsize from "./cssfontsize";
 import { Mousewheel, Pagination } from "swiper";
 
@@ -101,10 +102,11 @@ function AddCss() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="css_add"></div>
+
             <div className="container">
               <h1>Basic CSS Syntax</h1>
               <hr />
+              <img src={addcss} alt="" className="addcss_img" />
               <ul>
                 <li>
                   When a browser reads a style sheet, it will format the HTML
@@ -123,8 +125,8 @@ function AddCss() {
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <div className="css_add"></div>
-            <div className="container_largeest">
+
+            <div className="container">
               <h1>External CSS</h1>
               <hr />
               <ul>
@@ -156,9 +158,9 @@ function AddCss() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_add"></div>
+
             <div className="container">
-              <h1>Comment CSS Syntax</h1>
+              <h1>External CSS</h1>
               <hr />
               <ul>
                 <li>
@@ -183,9 +185,10 @@ function AddCss() {
               </ul>
             </div>
           </SwiperSlide>
+
           <SwiperSlide>
-            <div className="css_add"></div>
-            <div className="container_largeest">
+
+            <div className="container">
               <h1>Internal CSS</h1>
               <hr />
               <ul>
@@ -204,13 +207,6 @@ function AddCss() {
                 </li>
 
               </ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="css_add"></div>
-            <div className="container">
-              <h1>Internal CSS</h1>
-              <hr />
               <Editor
                 value={code3}
                 onValueChange={code3 => setCode3(code3)}
@@ -226,7 +222,7 @@ function AddCss() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="css_add"></div>
+
             <div className="container">
               <h1> Inline CSS</h1>
               <hr />
@@ -261,7 +257,7 @@ function AddCss() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_add"></div>
+
             <div className="container">
               <h1>Multiple Style Sheets</h1>
               <hr />
@@ -286,11 +282,7 @@ function AddCss() {
                   backgroundColor: "black",
                 }}
               />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="css_add"></div>
-            <div className="container">
+
               <h1>Cascading Order</h1>
               <hr />
               <ul>
@@ -306,10 +298,10 @@ function AddCss() {
                 <li>  External and internal style sheets (in the head section) </li>
                 <li>  Browser default </li>
               </ol>
-              <li>
-                So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
-              </li>
-
+              <ul>
+                <li>
+                  So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+                </li></ul>
             </div>
           </SwiperSlide>
         </Swiper>

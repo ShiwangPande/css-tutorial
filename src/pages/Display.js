@@ -5,14 +5,13 @@ import Editor from "react-simple-code-editor";
 import { highlight, languages } from "prismjs/components/prism-core";
 import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
-import "prismjs/themes/prism.css"; //Example style, you can use another
-import "./styles.css";
+import "prismjs/themes/prism.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import styled from "styled-components";
 import "./Home.css";
-
+import cssdisplay from "./img/cssdisplay.png";
 // import required modules
 import { Mousewheel, Pagination } from "swiper";
 function Display() {
@@ -45,10 +44,10 @@ function Display() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div className="css_display"></div>
                         <div className="container">
                             <h1>CSS Margins</h1>
                             <hr />
+                            <img className="cssdisplay" src={cssdisplay} />
                             <ul>
                                 <li style={{ border: "solid lightgreen", margin: "70px" }}>
                                     This element has a margin of 70px.
@@ -68,8 +67,8 @@ function Display() {
                     </SwiperSlide>
                     <SwiperSlide>
                         {" "}
-                        <div className="css_display"></div>
-                        <div className="container_largeest">
+
+                        <div className="container">
                             <h1>CSS Layout - The display Property</h1>
                             <hr />
                             <ul>
@@ -123,38 +122,30 @@ function Display() {
                                         </p>
                                     </Popup>
                                 </div>
+                                <li>
+                                    All the margin properties can have the following values:
+                                </li>
+                                <ol>
+                                    <li>auto - The browser calculates the margin</li>
+                                    <li>
+                                        length - Defines a margin in px, pt, cm, etc. Negative
+                                        values are also allowed
+                                    </li>
+                                    <li>
+                                        % - Defines a margin in % of the width of the containing
+                                        element
+                                    </li>
+                                    <li>
+                                        inherit - Inherits the margin value from the parent element
+                                    </li>
+                                </ol>
 
                             </ul>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        {" "}
-                        <div className="css_display"></div>
-                        <div className="container_largeest">
-                            <h1>CSS Layout - The display Property</h1>
-                            <hr />
-                            <li>
-                                All the margin properties can have the following values:
-                            </li>
-                            <ol>
-                                <li>auto - The browser calculates the margin</li>
-                                <li>
-                                    length - Defines a margin in px, pt, cm, etc. Negative
-                                    values are also allowed
-                                </li>
-                                <li>
-                                    % - Defines a margin in % of the width of the containing
-                                    element
-                                </li>
-                                <li>
-                                    inherit - Inherits the margin value from the parent element
-                                </li>
-                            </ol>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="css_display"></div>
-                        <div className="container_largeest">
+
+                        <div className="container">
                             <h1>Block-level Elements</h1>
                             <hr />
                             <ul>
@@ -179,7 +170,7 @@ function Display() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_display"></div>
+
                         <div className="container">
                             <h1>Inline Elements</h1>
                             <hr />
@@ -202,14 +193,9 @@ function Display() {
                                     <li>&#60;img&#62;</li>
                                 </ol>
                             </ul>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="css_display"></div>
-                        <div className="container">
                             <h1>Display: none;</h1>
-                            <hr />
                             <ul>
+                                <hr />
                                 <li>
                                     display: none; is commonly used with JavaScript to hide and
                                     show elements without deleting and recreating them.

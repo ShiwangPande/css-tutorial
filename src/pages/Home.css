@@ -24,19 +24,19 @@ body {
 }
 
 .swiper-slide {
-  text-align: center;
+  /* text-align: center; */
   font-size: 18px;
   background: linear-gradient(to top, #9ca3af, #4b5563, #060b26);
   color: #eee;
 
   /* Center slide text vertically */
 
-  display: flex;
+  /* display: flex; */
   /* display: block; */
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* gap: 1rem; */
+  /* justify-content: center; */
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
@@ -56,41 +56,53 @@ p {
   text-align: left;
 }
 .swiper-slide ul li {
-  margin: 5rem;
-  font-size: 1.5rem;
+  margin: 1rem;
+  font-size: 20px;
 }
 .container h1 {
-  margin: 2rem;
+  margin: 0.5rem;
 }
-.css_img {
-  width: 100%;
-  height: 100%;
-  background: url("./img/whatiscss.jpeg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.2;
+/* .swiper-slide img {
+  width: 25%;
+  height: 25%;
+  margin: 2rem 0 0 1rem;
+} */
+.swiper-slide .img_css {
+  width: 25%;
+  height: 25%;
+  margin: 2rem 0 0 1rem;
 }
-.swiper-slide img {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  margin: auto;
-  width: 50%;
-  height: 50%;
-  object-fit: contain;
-}
-.css_history {
+.swiper-slide .history {
   width: 60%;
-  height: 100%;
-  margin: auto;
-  background: url("./img/css-history.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.3;
+  margin: 2rem 0 0 1rem;
+}
+.swiper-slide .css_syntax {
+  width: 35%;
+  margin: 2rem 0 0 1rem;
+}
+.swiper-slide .addcss_img {
+  width: 35%;
+  margin: 2rem 0 0 1rem;
+}
+.swiper-slide .css_color {
+  width: 33%;
+  margin: 2rem 0 0 1rem;
+}
+.swiper-slide .cssborder {
+  width: 33%;
+  margin: 2rem 0 0 1rem;
+}
+.swiper-slide .cssmargin {
+  width: 33%;
+  margin: 2rem 0 0 1rem;
+}
+.swiper-slide .cssdisplay {
+  width: 33%;
+  margin: 2rem 0 0 1rem;
+}
+.swiper-slide .cssposition {
+  width: 30%;
+  margin: 0.5rem 0 0 1rem;
 }
 .colors {
   width: 45%;
@@ -110,40 +122,15 @@ p {
   align-items: center;
   gap: 1rem;
 }
-.swiper-slide .container_large {
-  width: 100%;
-  margin: auto;
-}
-.swiper-slide .container_large ul li {
-  width: 100%;
-  margin: 2.3rem;
-}
-.swiper-slide .container_large ul li {
-  width: 100%;
-  margin: 2.3rem;
-}
-.swiper-slide .container_large ol li {
-  width: 100%;
-  margin: 2.3rem;
-}
-.swiper-slide .container_largeest ul ul li {
-  width: 100%;
-  margin: 0.4rem;
-}
-.container_largeest ul li {
-  width: 100%;
+
+.swiper-slide .container ol li {
+  /* width: 100%; */
   margin: 1rem;
+  font-size: 20px;
 }
-.container_largeest {
-  width: 100%;
-}
-.swiper-slide .container_largeest ul {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-.swiper-slide .container_largeest ul li {
-  width: 100%;
-  margin: 0.5rem;
+.swiper-slide .container ol {
+  /* width: 100%; */
+  margin: 1rem;
 }
 .css_backgrounds {
   margin: auto;
@@ -193,135 +180,39 @@ p {
   background-color: rgb(10, 165, 189);
   cursor: pointer;
 }
-.css_color {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background: url("./img/csscolor.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.2;
+.codeeditor {
+  font-size: 20px;
 }
-.css_border {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background: url("./img/cssborder.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.3;
+.codeeditor_addcsscode {
+  font-size: 17px;
 }
-.css_add {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background: url("./img/addcss.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.3;
+.codeeditor_addcsscodelarge {
+  font-size: 14px;
 }
-.css_margin {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background: url("./img/css\ margin.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.3;
-}
-.css_display {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background: url("./img/cssdisplay.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.3;
-}
-.css_position {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background: url("./img/cssposition.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.3;
-}
+
 @media screen and (max-width: 768px) {
-  .css_history {
-    width: 38%;
-    height: 100%;
-    opacity: 1;
+  .codeeditor {
+    font-size: 10px;
+  }
+  .codeeditor_addcsscode {
+    font-size: 10px;
+  }
+  .codeeditor_addcsscodelarge {
+    font-size: 10px;
   }
   .swiper-slide img {
     display: block;
     object-fit: cover;
   }
-  .css_img {
-    width: 84%;
-    height: 25%;
-    top: -5px;
-    opacity: 1;
-    background-size: contain;
-    /* background: none; */
-  }
-  .css_color {
-    width: 68%;
-    height: 25%;
-    top: -5px;
-    opacity: 1;
-    background-size: contain;
-  }
-  .css_border {
-    width: 84%;
-    height: 25%;
-    top: -5px;
-    opacity: 1;
-    background-size: contain;
-  }
-  .css_add {
-    width: 84%;
-    height: 25%;
-    top: -5px;
-    opacity: 1;
-    background-size: contain;
-  }
-  .css_margin {
-    width: 84%;
-    height: 25%;
-    top: -5px;
-    opacity: 1;
-    background-size: contain;
-  }
-  .css_display {
-    width: 84%;
-    height: 25%;
-    top: -5px;
-    opacity: 1;
-    background-size: contain;
-  }
-  .css_position {
-    width: 84%;
-    height: 25%;
-    top: -5px;
-    opacity: 1;
-    background-size: contain;
-  }
   .swiper-slide ul li {
     margin: 1rem;
-    font-size: large;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .swiper-slide ol li {
+    margin: 1rem;
+    font-size: 15px;
+    text-align: justify;
   }
   .swiper-slide {
     background: linear-gradient(
@@ -343,16 +234,25 @@ p {
   .colors {
     font-size: medium;
   }
-  .container_large h1 {
+  .swiper-slide .container ol li {
+    width: 87%;
     margin: 1rem;
-    font-size: 31px;
-  }
-  .swiper-slide .container_largeest ul li {
     font-size: 15px;
-    margin: 0.5rem;
+    text-align: justify;
   }
-  .swiper-slide .container_largeest ol li {
-    font-size: 15px;
+  .container h1 {
     margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .swiper-slide .addcss_img {
+    width: 85%;
+    margin: 2rem 0 0 1rem;
+  }
+  .swiper-slide .cssdisplay {
+    width: 85%;
+    margin: 2rem 0 0 1rem;
+  }
+  .swiper-slide .cssposition {
+    width: 80%;
   }
 }

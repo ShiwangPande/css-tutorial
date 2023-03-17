@@ -1,5 +1,5 @@
 import React from "react";
-import "./syntax.css";
+import "./Home.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -11,6 +11,7 @@ import Commentcode from "./Codeeditor_comment";
 import Cssparacode from "./cssparacode";
 import Cssheading from "./cssheading";
 import Cssfontsize from "./cssfontsize";
+import syntax from "./img/syntax.png"
 import { Mousewheel, Pagination } from "swiper";
 function Syntax() {
   return (
@@ -28,10 +29,10 @@ function Syntax() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="css_syntax"></div>
             <div className="container">
               <h1>Basic CSS Syntax</h1>
               <hr />
+              <img src={syntax} className="css_syntax" />
               <ul>
                 <li>
                   The basic structure of a CSS rule consists of a selector,
@@ -51,10 +52,10 @@ function Syntax() {
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <div className="css_syntax"></div>
             <div className="container">
               <h1>Basic CSS Syntax</h1>
               <hr />
+
               <ul>
                 <li>
                   Here, selector can be an HTML element, a class, an ID, or a
@@ -71,10 +72,10 @@ function Syntax() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_syntax"></div>
             <div className="container">
               <h1>Comment CSS Syntax</h1>
               <hr />
+
               <ul>
                 <li>
                   This rule would apply the color blue and a font size of 24
@@ -90,10 +91,10 @@ function Syntax() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_syntax"></div>
             <div className="container">
               <h1>How CSS works?</h1>
               <hr />
+
               <ul>
                 <li>
                   CSS works by selecting HTML elements and applying styles to
@@ -107,15 +108,6 @@ function Syntax() {
                   You can use inline styles, which are styles applied directly
                   to individual HTML elements.
                 </li>
-              </ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="css_syntax"></div>
-            <div className="container">
-              <h1>How CSS works?</h1>
-              <hr />
-              <ul>
                 <li>
                   {" "}
                   CSS has a wide range of features, including colors, fonts,
@@ -139,10 +131,10 @@ function Syntax() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_syntax"></div>
-            <div className="container_largeest">
+            <div className="container">
               <h1>CSS Syntax</h1>
               <hr />
+
               <ul>
                 <li>
                   The syntax of CSS consists of selectors, properties, and
@@ -170,10 +162,10 @@ function Syntax() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_syntax"></div>
-            <div className="container_largeest">
+            <div className="container">
               <h1>Types of CSS Selector</h1>
               <hr />
+
               <ol>
                 <li>
                   Type selectors: These selectors target elements based on their
@@ -204,10 +196,10 @@ function Syntax() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_syntax"></div>
             <div className="container">
               <h1>Css Heading Syntax</h1>
               <hr />
+
               <ul>
                 <li>
                   In this example, "font-size" is the property being defined,
@@ -229,10 +221,10 @@ function Syntax() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="css_syntax"></div>
             <div className="container">
               <h1>Css Fontsize</h1>
               <hr />
+
               <ul>
                 <li>
                   CSS also supports shorthand properties, which allow multiple
@@ -248,11 +240,6 @@ function Syntax() {
                   "Arial, sans-serif" sets the font family.
                 </li>
               </ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="css_syntax"></div>
-            <div className="container">
               <h1>Conclusion</h1>
               <hr />
               <ul>
@@ -267,6 +254,13 @@ function Syntax() {
               </ul>
             </div>
           </SwiperSlide>
+          {/* <SwiperSlide>
+            <div className="container">
+
+
+
+            </div>
+          </SwiperSlide> */}
         </Swiper>
       </>
     </div>

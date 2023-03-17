@@ -5,12 +5,11 @@ import Editor from "react-simple-code-editor";
 import { highlight, languages } from "prismjs/components/prism-core";
 import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
-import "prismjs/themes/prism.css"; //Example style, you can use another
-import "./styles.css";
+import "prismjs/themes/prism.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
+import cssborder from "./img/cssborder.png";
 import "./Home.css";
 
 // import required modules
@@ -66,10 +65,10 @@ function Border() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div className="css_border"></div>
                         <div className="container">
                             <h1>CSS Borders</h1>
                             <hr />
+                            <img className="cssborder" src={cssborder} />
                             <ul>
                                 <li>
                                     The CSS border properties allow you to specify the style,
@@ -99,8 +98,8 @@ function Border() {
                     </SwiperSlide>
                     <SwiperSlide>
                         {" "}
-                        <div className="css_border"></div>
-                        <div className="container_largeest">
+
+                        <div className="container">
                             <h1 style={{ paddingTop: "18px" }}>CSS Border Style</h1>
                             <hr />
                             <ul>
@@ -130,13 +129,23 @@ function Border() {
                     </SwiperSlide>
                     <SwiperSlide>
                         {" "}
-                        <div className="css_border"></div>
-                        <div className="container_largeest">
+
+                        <div className="container">
                             <h1>CSS Border Style</h1>
                             <hr />
                             <ul>
                                 <ul>
 
+                                    <li>
+                                        {" "}
+                                        inset - Defines a 3D inset border. The effect depends on the
+                                        border-color value
+                                    </li>
+                                    <li>
+                                        {" "}
+                                        outset - Defines a 3D outset border. The effect depends on
+                                        the border-color value
+                                    </li>
                                     <li>
                                         {" "}
                                         inset - Defines a 3D inset border. The effect depends on the
@@ -160,7 +169,7 @@ function Border() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_border"></div>
+
                         <div className="container">
                             <h1>History of CSS</h1>
                             <hr />
@@ -180,15 +189,7 @@ function Border() {
                                     working at CERN, the European Organization for Nuclear
                                     Research.{" "}
                                 </li>
-                            </ul>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="css_border"></div>
-                        <div className="container_large">
-                            <h1>History of CSS</h1>
-                            <hr />
-                            <ul>
+
                                 <li>    <Editor
                                     value={code1}
                                     onValueChange={(code1) => setCode1(code1)}
@@ -201,11 +202,10 @@ function Border() {
                                     }}
                                 />  </li>
                             </ul>
-
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_border"></div>
+
                         <div className="container">
                             <h1>CSS Border Width</h1>
                             <hr />
@@ -220,15 +220,6 @@ function Border() {
                                     Demonstration of the different border widths:{" "}
                                 </li>{" "}
 
-                            </ul>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="css_border"></div>
-                        <div className="container_largeest">
-                            <h1>CSS Border Width</h1>
-                            <hr />
-                            <ul>
                                 <Editor
                                     value={code2}
                                     onValueChange={(code2) => setCode2(code2)}
@@ -238,30 +229,30 @@ function Border() {
                                     style={{
                                         fontFamily: '"Fira code", "Fira Mono", monospace',
                                         backgroundColor: "black",
+                                        fontSize: "10px",
                                     }}
+
                                 />
                             </ul>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_border"></div>
+
                         <div className="container">
-                            <h1>History of CSS</h1>
+                            <h1>CSS Border Width</h1>
                             <hr />
                             <ul>
+
                                 <li style={{ border: "solid 5px" }}> 5px border-width </li>
                                 <li style={{ border: "solid medium" }}> 5px border-width </li>
                                 <li style={{ border: "dotted 2px" }}> 5px border-width </li>
                                 <li style={{ border: "dotted thick " }}> 5px border-width </li>
                             </ul>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="css_border"></div>
-                        <div className="container_largeest">
                             <h1>Specific Side Widths</h1>
                             <hr />
                             <ul>
+
+
                                 <li>
                                     The border-width property can have from one to four values
                                     (for the top border, right border, bottom border, and the left
@@ -285,8 +276,8 @@ function Border() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_border"></div>
-                        <div className="container_largeest">
+
+                        <div className="container">
                             <h1>CSS Border Color</h1>
                             <hr />
                             <ul>
@@ -313,11 +304,6 @@ function Border() {
                                     element.
                                 </li>
                             </ul>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="css_border"></div>
-                        <div className="container_large">
                             <h1>CSS Border Color</h1>
                             <hr />
                             <ul>

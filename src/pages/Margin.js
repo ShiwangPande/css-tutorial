@@ -5,12 +5,11 @@ import Editor from "react-simple-code-editor";
 import { highlight, languages } from "prismjs/components/prism-core";
 import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
-import "prismjs/themes/prism.css"; //Example style, you can use another
-import "./styles.css";
+import "prismjs/themes/prism.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
+import cssmargin from "./img/css margin.png";
 import "./Home.css";
 
 // import required modules
@@ -39,10 +38,10 @@ function Margin() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div className="css_margin"></div>
                         <div className="container">
                             <h1>CSS Margins</h1>
                             <hr />
+                            <img className="cssmargin" src={cssmargin} />
                             <ul>
                                 <li style={{ border: "solid lightgreen", margin: "70px" }}>
                                     This element has a margin of 70px.
@@ -62,8 +61,8 @@ function Margin() {
                     </SwiperSlide>
                     <SwiperSlide>
                         {" "}
-                        <div className="css_margin"></div>
-                        <div className="container_largeest">
+
+                        <div className="container">
                             <h1>Margin - Individual Sides</h1>
                             <hr />
                             <ul>
@@ -95,13 +94,6 @@ function Margin() {
                                     </li>
                                 </ol>
                             </ul>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="css_margin"></div>
-                        <div className="container">
-                            <h1>History of CSS</h1>
-                            <hr />
                             <ul>
                                 <li>
                                     Example Set different margins for all four sides of a
@@ -117,13 +109,14 @@ function Margin() {
                                 style={{
                                     fontFamily: '"Fira code", "Fira Mono", monospace',
                                     backgroundColor: "black",
+                                    fontSize: "12px",
                                 }}
                             />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_margin"></div>
-                        <div className="container_largeest">
+
+                        <div className="container">
                             <h1>Margin - Shorthand Property </h1>
                             <hr />
                             <ul>
@@ -157,8 +150,8 @@ function Margin() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="css_margin"></div>
-                        <div className="container_largeest">
+
+                        <div className="container">
                             <h1>Margin - Shorthand Property </h1>
                             <hr />
                             <ul>
