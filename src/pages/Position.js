@@ -12,7 +12,9 @@ import "swiper/css/pagination";
 import styled from "styled-components";
 import "./Home.css";
 import cssposition from "./img/cssposition.png";
-
+import { Link } from 'react-router-dom'
+import { AiFillCaretLeft } from "react-icons/ai";
+import { AiFillCaretRight } from "react-icons/ai";
 // import required modules
 import { Mousewheel, Pagination } from "swiper";
 function Position() {
@@ -99,6 +101,9 @@ function Position() {
                   <li>sticky</li>
                 </ul>
               </ul>
+            </div>
+            <div className="next">
+              <Link to="/display"><AiFillCaretLeft /></Link> <Link to="/"><AiFillCaretRight /></Link>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -286,6 +291,9 @@ function Position() {
                   backgroundColor: "black",
                 }}
               />
+            </div>
+            <div className="next">
+              <Link to="/display"><AiFillCaretLeft /></Link> <Link to="/"><AiFillCaretRight /></Link>
             </div>
           </SwiperSlide>
         </Swiper>

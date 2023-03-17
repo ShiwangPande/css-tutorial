@@ -11,7 +11,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import cssborder from "./img/cssborder.png";
 import "./Home.css";
-
+import { Link } from 'react-router-dom'
+import { AiFillCaretLeft } from "react-icons/ai";
+import { AiFillCaretRight } from "react-icons/ai";
 // import required modules
 import { Mousewheel, Pagination } from "swiper";
 function Border() {
@@ -94,6 +96,9 @@ function Border() {
                                     I have a blue left border.
                                 </li>
                             </ul>
+                        </div>
+                        <div className="next">
+                            <Link to="/color"><AiFillCaretLeft /></Link> <Link to="/margin"><AiFillCaretRight /></Link>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -317,6 +322,9 @@ function Border() {
                                     Blue border
                                 </li>
                             </ul>
+                        </div>
+                        <div className="next">
+                            <Link to="/color"><AiFillCaretLeft /></Link> <Link to="/margin"><AiFillCaretRight /></Link>
                         </div>
                     </SwiperSlide>
                 </Swiper>

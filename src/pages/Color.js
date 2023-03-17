@@ -11,7 +11,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import csscolor from "./img/csscolor.png"
 import "./Home.css";
-
+import { Link } from 'react-router-dom'
+import { AiFillCaretLeft } from "react-icons/ai";
+import { AiFillCaretRight } from "react-icons/ai";
 // import required modules
 import { Mousewheel, Pagination } from "swiper";
 function Color() {
@@ -105,6 +107,9 @@ function Color() {
                             </ol>
 
                         </div>
+                        <div className="next">
+                            <Link to="/addCss"><AiFillCaretLeft /></Link> <Link to="/border"><AiFillCaretRight /></Link>
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="container">
@@ -124,6 +129,9 @@ function Color() {
                                     <div className="colors" style={{ background: "LightGray" }}>LightGray</div>
                                 </div>
                             </ul>
+                        </div>
+                        <div className="next">
+                            <Link to="/addCss"><AiFillCaretLeft /></Link> <Link to="/border"><AiFillCaretRight /></Link>
                         </div></SwiperSlide>
                     <SwiperSlide>
 
@@ -279,7 +287,6 @@ function Color() {
                         <div className="container_large">
                             <h1>Opacity / Transparency</h1>
                             <hr />
-                            <img className="css_color" src={csscolor} alt="" />
                             <ul>
                                 <li> The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:</li>
                             </ul>
@@ -418,6 +425,9 @@ function Color() {
                                     fontFamily: '"Fira code", "Fira Mono", monospace',
                                     backgroundColor: "black",
                                 }} />
+                        </div>
+                        <div className="next">
+                            <Link to="/addCss"><AiFillCaretLeft /></Link> <Link to="/border"><AiFillCaretRight /></Link>
                         </div>
                     </SwiperSlide>
                 </Swiper>

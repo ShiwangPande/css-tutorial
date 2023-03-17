@@ -13,8 +13,9 @@ import "swiper/css/pagination";
 import addcss from "./img/addcss.png"
 import Cssfontsize from "./cssfontsize";
 import { Mousewheel, Pagination } from "swiper";
-
-
+import { Link } from 'react-router-dom'
+import { AiFillCaretLeft } from "react-icons/ai";
+import { AiFillCaretRight } from "react-icons/ai";
 
 function AddCss() {
   const [code1, setCode1] = React.useState(
@@ -104,7 +105,7 @@ function AddCss() {
           <SwiperSlide>
 
             <div className="container">
-              <h1>Basic CSS Syntax</h1>
+              <h1>How to Add CSS?</h1>
               <hr />
               <img src={addcss} alt="" className="addcss_img" />
               <ul>
@@ -121,6 +122,9 @@ function AddCss() {
                 <li> Inline CSS</li>
               </ol>
               {/* <Codeeditor /> */}
+            </div>
+            <div className="next">
+              <Link to="/Syntax"><AiFillCaretLeft /></Link> <Link to="/color"><AiFillCaretRight /></Link>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -254,11 +258,6 @@ function AddCss() {
                   }}
                 />
               </ul>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-
-            <div className="container">
               <h1>Multiple Style Sheets</h1>
               <hr />
               <ul>
@@ -271,6 +270,12 @@ function AddCss() {
                   Assume that an external style sheet has the following style for the &#60;h1&#62; element:
                 </li>
               </ul>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+
+            <div className="container">
+
               <Editor
                 value={code5}
                 onValueChange={code5 => setCode5(code5)}
@@ -302,6 +307,9 @@ function AddCss() {
                 <li>
                   So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
                 </li></ul>
+            </div>
+            <div className="next">
+              <Link to="/Syntax"><AiFillCaretLeft /></Link> <Link to="/color"><AiFillCaretRight /></Link>
             </div>
           </SwiperSlide>
         </Swiper>

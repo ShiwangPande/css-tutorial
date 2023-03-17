@@ -5,11 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
+import { AiFillCaretLeft } from "react-icons/ai";
+import { AiFillCaretRight } from "react-icons/ai";
 import "./Home.css";
 import css from "../img/creative-css3-tutorials.webp";
 import history from "./img/csshistory.png";
-
+import { Link } from 'react-router-dom'
 // import required modules
 import { Mousewheel, Pagination } from "swiper";
 function Home() {
@@ -42,6 +43,9 @@ function Home() {
 
               </ul>
 
+            </div>
+            <div className="next">
+              <Link to="/Position"><AiFillCaretLeft /></Link> <Link to="/Syntax"><AiFillCaretRight /></Link>
             </div>
           </SwiperSlide>
 
@@ -88,8 +92,11 @@ function Home() {
                 <li>  CSS has a wide range of features, including colors, fonts, layout, animation, and more. With CSS, you can create complex and visually appealing web pages that are easy to maintain and update.</li>
                 <li> You can also use internal styles, which are defined within the HTML document using the &#60;style&#62; tag. </li>
                 <li> The most common method is to use an external stylesheet, which is a separate file that contains all the styles for the website and is linked to the HTML document using the &#60;link&#62; tag.</li>
-             
+
               </ul>
+              <div className="next">
+                <Link to="/Position"><AiFillCaretLeft /></Link> <Link to="/Syntax"><AiFillCaretRight /></Link>
+              </div>
             </div>
 
           </SwiperSlide>

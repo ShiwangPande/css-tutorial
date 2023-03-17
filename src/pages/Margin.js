@@ -11,7 +11,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import cssmargin from "./img/css margin.png";
 import "./Home.css";
-
+import { Link } from 'react-router-dom'
+import { AiFillCaretLeft } from "react-icons/ai";
+import { AiFillCaretRight } from "react-icons/ai";
 // import required modules
 import { Mousewheel, Pagination } from "swiper";
 function Margin() {
@@ -57,6 +59,9 @@ function Margin() {
                                     (top, right, bottom, and left).
                                 </li>
                             </ul>
+                        </div>
+                        <div className="next">
+                            <Link to="/border"><AiFillCaretLeft /></Link> <Link to="/display"><AiFillCaretRight /></Link>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -180,6 +185,9 @@ function Margin() {
                                     </ul>
                                 </li>
                             </ul>
+                        </div>
+                        <div className="next">
+                            <Link to="/border"><AiFillCaretLeft /></Link> <Link to="/display"><AiFillCaretRight /></Link>
                         </div>
                     </SwiperSlide>
 

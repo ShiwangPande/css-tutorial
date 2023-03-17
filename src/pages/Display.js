@@ -13,6 +13,9 @@ import styled from "styled-components";
 import "./Home.css";
 import cssdisplay from "./img/cssdisplay.png";
 // import required modules
+import { Link } from 'react-router-dom'
+import { AiFillCaretLeft } from "react-icons/ai";
+import { AiFillCaretRight } from "react-icons/ai";
 import { Mousewheel, Pagination } from "swiper";
 function Display() {
     const [code1, setCode1] = React.useState(
@@ -44,33 +47,13 @@ function Display() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div className="container">
-                            <h1>CSS Margins</h1>
-                            <hr />
-                            <img className="cssdisplay" src={cssdisplay} />
-                            <ul>
-                                <li style={{ border: "solid lightgreen", margin: "70px" }}>
-                                    This element has a margin of 70px.
-                                </li>
-                                <li>
-                                    {" "}
-                                    The CSS margin properties are used to create space around
-                                    elements, outside of any defined borders.
-                                </li>
-                                <li>
-                                    With CSS, you have full control over the margins. There are
-                                    properties for setting the margin for each side of an element
-                                    (top, right, bottom, and left).
-                                </li>
-                            </ul>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
                         {" "}
 
                         <div className="container">
                             <h1>CSS Layout - The display Property</h1>
                             <hr />
+
+                            <img className="cssdisplay" src={cssdisplay} />
                             <ul>
                                 <li>
                                     The <code>display</code> property is the most important CSS
@@ -107,7 +90,7 @@ function Display() {
                                         >
                                             Close
                                         </button>
-                                        <h1>Block and Inline Elements</h1>
+                                        <h2>Block and Inline Elements</h2>
                                         <p>
                                             <li>
                                                 {" "}
@@ -122,6 +105,21 @@ function Display() {
                                         </p>
                                     </Popup>
                                 </div>
+
+
+                            </ul>
+                        </div>
+                        <div className="next">
+                            <Link to="/margin"><AiFillCaretLeft /></Link> <Link to="/position"><AiFillCaretRight /></Link>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+
+                        <div className="container">
+                            <h1>Block-level Elements</h1>
+                            <hr />
+
+                            <ul>
                                 <li>
                                     All the margin properties can have the following values:
                                 </li>
@@ -146,7 +144,7 @@ function Display() {
                     <SwiperSlide>
 
                         <div className="container">
-                            <h1>Block-level Elements</h1>
+                            <h1>Inline Elements</h1>
                             <hr />
                             <ul>
                                 <li>
@@ -166,19 +164,21 @@ function Display() {
                                     <li>&#60;footer&#62;</li>
                                     <li>&#60;section&#62;</li>
                                 </ol>
+                                <li>
+                                    An inline element does not start on a new line and only takes
+                                    up as much width as necessary.
+                                </li>
+
                             </ul>
+
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
 
                         <div className="container">
-                            <h1>Inline Elements</h1>
+                            <h1>Display: none;</h1>
                             <hr />
                             <ul>
-                                <li>
-                                    An inline element does not start on a new line and only takes
-                                    up as much width as necessary.
-                                </li>
                                 <li>
                                     {" "}
                                     <span>
@@ -192,10 +192,6 @@ function Display() {
                                     <li>&#60;a&#62;</li>
                                     <li>&#60;img&#62;</li>
                                 </ol>
-                            </ul>
-                            <h1>Display: none;</h1>
-                            <ul>
-                                <hr />
                                 <li>
                                     display: none; is commonly used with JavaScript to hide and
                                     show elements without deleting and recreating them.
@@ -208,6 +204,9 @@ function Display() {
                                     The &#60;script&#62; element uses display: none; as default.
                                 </li>
                             </ul>
+                        </div>
+                        <div className="next">
+                            <Link to="/margin"><AiFillCaretLeft /></Link> <Link to="/position"><AiFillCaretRight /></Link>
                         </div>
                     </SwiperSlide>
 

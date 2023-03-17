@@ -12,6 +12,9 @@ import Cssparacode from "./cssparacode";
 import Cssheading from "./cssheading";
 import Cssfontsize from "./cssfontsize";
 import syntax from "./img/syntax.png"
+import { Link } from 'react-router-dom'
+import { AiFillCaretLeft } from "react-icons/ai";
+import { AiFillCaretRight } from "react-icons/ai";
 import { Mousewheel, Pagination } from "swiper";
 function Syntax() {
   return (
@@ -48,6 +51,9 @@ function Syntax() {
                 </li>
                 <Codeeditor />
               </ul>
+            </div>
+            <div className="next">
+              <Link to="/"><AiFillCaretLeft /></Link> <Link to="/addCss"><AiFillCaretRight /></Link>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -253,14 +259,11 @@ function Syntax() {
                 </li>
               </ul>
             </div>
-          </SwiperSlide>
-          {/* <SwiperSlide>
-            <div className="container">
-
-
-
+            <div className="next">
+              <Link to="/"><AiFillCaretLeft /></Link> <Link to="/addCss"><AiFillCaretRight /></Link>
             </div>
-          </SwiperSlide> */}
+          </SwiperSlide>
+
         </Swiper>
       </>
     </div>
