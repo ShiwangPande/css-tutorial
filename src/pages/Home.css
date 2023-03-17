@@ -277,4 +277,16 @@ p {
   .swiper-slide .cssposition {
     width: 80%;
   }
+  .swiper-slide .css_color {
+    width: 80%;
+    margin: 2rem 0 0 1rem;
+  }
+  .swiper-slide .cssborder {
+    width: 80%;
+    margin: 2rem 0 0 1rem;
+  }
+  .swiper-slide .cssmargin {
+    width: 80%;
+    margin: 2rem 0 0 1rem;
+  }
 }
