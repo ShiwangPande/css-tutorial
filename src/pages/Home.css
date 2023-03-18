@@ -233,6 +233,16 @@ p {
     /* margin-right: 1rem; */
     /* position: relative; */
   }
+  .next {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: #eee;
+    /* background-color: rgb(10, 165, 189); */
+    cursor: pointer;
+  }
   /* .codeeditor {
     font-size: 10px;
   }
