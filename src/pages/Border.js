@@ -314,9 +314,9 @@ function Border() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="next">
-                            <Link to="/color"><AiFillCaretLeft /></Link> <Link to="/margin"><AiFillCaretRight /></Link>
-                        </div>
+                    </div>
+                    <div className="next">
+                        <Link to="/color"><AiFillCaretLeft /></Link> <Link to="/margin"><AiFillCaretRight /></Link>
                     </div>
                 </div>
                 <Footer />

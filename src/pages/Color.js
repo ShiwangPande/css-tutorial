@@ -417,9 +417,9 @@ function Color() {
                                     backgroundColor: "black",
                                 }} />
                         </div>
-                        <div className="next">
-                            <Link to="/addCss"><AiFillCaretLeft /></Link> <Link to="/border"><AiFillCaretRight /></Link>
-                        </div>
+                    </div>
+                    <div className="next">
+                        <Link to="/addCss"><AiFillCaretLeft /></Link> <Link to="/border"><AiFillCaretRight /></Link>
                     </div>
                 </div>
                 <Footer />

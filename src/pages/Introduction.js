@@ -96,10 +96,10 @@ function Home() {
                 <li> The most common method is to use an external stylesheet, which is a separate file that contains all the styles for the website and is linked to the HTML document using the &#60;link&#62; tag.</li>
 
               </ul>
+            </div>
               <div className="next">
                 <Link to="/Position"><AiFillCaretLeft /></Link> <Link to="/Syntax"><AiFillCaretRight /></Link>
               </div>
-            </div>
 
           </div>
         </div>

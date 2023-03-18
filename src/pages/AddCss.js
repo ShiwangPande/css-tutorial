@@ -299,9 +299,9 @@ function AddCss() {
                   So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
                 </li></ul>
             </div>
-            <div className="next">
-              <Link to="/Syntax"><AiFillCaretLeft /></Link> <Link to="/color"><AiFillCaretRight /></Link>
-            </div>
+          </div>
+          <div className="next">
+            <Link to="/Syntax"><AiFillCaretLeft /></Link> <Link to="/color"><AiFillCaretRight /></Link>
           </div>
         </div>
         <Footer />

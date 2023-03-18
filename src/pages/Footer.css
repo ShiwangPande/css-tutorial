@@ -187,4 +187,11 @@ footer {
 
     width: 100vw;
   }
+  .footer-bottom p {
+    text-align: left;
+
+    font-size: 14px;
+
+    word-spacing: 2px;
+  }
 }
