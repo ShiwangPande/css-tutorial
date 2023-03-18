@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, div } from "swiper/react";
 import Editor from 'react-simple-code-editor';
 import { highlight, languages } from 'prismjs/components/prism-core';
 import 'prismjs/components/prism-clike';
@@ -9,6 +9,7 @@ import 'prismjs/themes/prism.css';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import Footer from './Footer';
 import csscolor from "./img/csscolor.png"
 import "./Home.css";
 import { Link } from 'react-router-dom'
@@ -78,18 +79,8 @@ function Color() {
     return (
         <div className='home'>
             <>
-                <Swiper
-                    direction={"vertical"}
-                    slidesPerView={"auto"}
-                    // spaceBetween={3}
-                    mousewheel={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Mousewheel, Pagination]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
+                <div className="swiper">
+                    <div className="swiperslide">
                         <div className="container">
                             <h1>CSS Colors</h1>
                             <hr />
@@ -110,8 +101,8 @@ function Color() {
                         <div className="next">
                             <Link to="/addCss"><AiFillCaretLeft /></Link> <Link to="/border"><AiFillCaretRight /></Link>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
                         <div className="container">
                             <h1>CSS Color Names</h1>
                             <hr />
@@ -132,8 +123,8 @@ function Color() {
                         </div>
                         <div className="next">
                             <Link to="/addCss"><AiFillCaretLeft /></Link> <Link to="/border"><AiFillCaretRight /></Link>
-                        </div></SwiperSlide>
-                    <SwiperSlide>
+                        </div></div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>CSS Background Color</h1>
@@ -157,8 +148,8 @@ function Color() {
                         </div>
 
 
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1> CSS Text Color</h1>
@@ -193,8 +184,8 @@ function Color() {
                                     backgroundColor: "black",
                                 }} />
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>CSS Border Color</h1>
@@ -218,10 +209,10 @@ function Color() {
                                 }} />
                         </div>
 
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
-                        <div className="container_large">
+                        <div className="container">
                             <h1>CSS Color Values</h1>
                             <hr />
                             <ul>
@@ -234,8 +225,8 @@ function Color() {
                                 <li style={{ backgroundColor: "hsla(9, 100%, 64%, 0.5)" }}> hsla(9, 100%, 64%, 0.5)</li>
                             </ul>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1 style={{ margin: "1rem" }}>CSS Backgrounds</h1>
@@ -260,10 +251,10 @@ function Color() {
                                 </ul>
                             </div>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
-                        <div className="container_large">
+                        <div className="container">
                             <h1>CSS background-color</h1>
                             <hr />
                             <ul>
@@ -282,9 +273,9 @@ function Color() {
                                     backgroundColor: "black",
                                 }} />
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="container_large">
+                    </div>
+                    <div className="swiperslide">
+                        <div className="container">
                             <h1>Opacity / Transparency</h1>
                             <hr />
                             <ul>
@@ -309,10 +300,10 @@ function Color() {
                                     backgroundColor: "black",
                                 }} />
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
-                        <div className="container_large">
+                        <div className="container">
                             <h1>CSS Background Image</h1>
                             <hr />
                             <ul>
@@ -335,10 +326,10 @@ function Color() {
                                     backgroundColor: "black",
                                 }} />
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
-                        <div className="container_large">
+                        <div className="container">
                             <h1>CSS Background Image Repeat</h1>
                             <hr />
                             <ul>
@@ -375,10 +366,10 @@ function Color() {
                                     backgroundColor: "black",
                                 }} />
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
-                        <div className="container_large">
+                        <div className="container">
                             <h1>CSS background-repeat: no-repeat</h1>
                             <hr />
                             <ul>
@@ -403,10 +394,10 @@ function Color() {
                                 </li>
                             </ul>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
-                        <div className="container_large">
+                        <div className="container">
                             <h1>CSS background-position</h1>
                             <hr />
                             <ul>
@@ -429,8 +420,9 @@ function Color() {
                         <div className="next">
                             <Link to="/addCss"><AiFillCaretLeft /></Link> <Link to="/border"><AiFillCaretRight /></Link>
                         </div>
-                    </SwiperSlide>
-                </Swiper>
+                    </div>
+                </div>
+                <Footer />
             </>
         </div >
     );

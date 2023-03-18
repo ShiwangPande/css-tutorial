@@ -8,8 +8,7 @@ body {
   position: relative;
   height: 100%;
 }
-
-body {
+w body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -18,17 +17,17 @@ body {
   padding: 0;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
+.swipers {
+  /* width: 100%;
+  height: 100%; */
 }
 
-.swiper-slide {
+.swiperslide {
   /* text-align: center; */
   font-size: 18px;
-  background: linear-gradient(to top, #9ca3af, #4b5563, #060b26);
+  /* background: linear-gradient(to top, #9ca3af, #4b5563, #060b26); */
   color: #eee;
-
+  margin-top: 4rem;
   /* Center slide text vertically */
 
   /* display: flex; */
@@ -51,58 +50,68 @@ p {
   font-weight: 500;
   text-align: left;
 }
-.swiper-slide ul {
-  margin: 1rem;
+.swiperslide ul {
+  margin: 2rem;
   text-align: left;
 }
-.swiper-slide ul li {
-  margin: 1rem;
+.swiperslide ul li {
+  margin: 2rem;
   font-size: 20px;
 }
 .container h1 {
   margin: 0.5rem;
+  text-align: center;
 }
-/* .swiper-slide img {
+/* .swiperslide img {
   width: 25%;
   height: 25%;
-  margin: 2rem 0 0 1rem;
+  margin: auto
 } */
-.swiper-slide .img_css {
-  width: 25%;
-  height: 25%;
-  margin: 2rem 0 0 1rem;
-}
-.swiper-slide .history {
+.swiperslide .img_css {
   width: 60%;
-  margin: 2rem 0 0 1rem;
+  height: 25%;
+  margin: 2rem auto;
+  display: block;
 }
-.swiper-slide .css_syntax {
-  width: 35%;
-  margin: 2rem 0 0 1rem;
+.swiperslide .history {
+  width: 70%;
+  margin: 2rem auto;
+  display: block;
 }
-.swiper-slide .addcss_img {
-  width: 35%;
-  margin: 2rem 0 0 1rem;
+.swiperslide .css_syntax {
+  width: 60%;
+  margin: 2rem auto;
+  display: block;
 }
-.swiper-slide .css_color {
-  width: 33%;
-  margin: 2rem 0 0 1rem;
+.swiperslide .addcss_img {
+  width: 60%;
+  margin: 2rem auto;
+  display: block;
 }
-.swiper-slide .cssborder {
-  width: 33%;
-  margin: 2rem 0 0 1rem;
+.swiperslide .css_color {
+  width: 60%;
+  margin: 2rem auto;
+  display: block;
 }
-.swiper-slide .cssmargin {
-  width: 33%;
-  margin: 2rem 0 0 1rem;
+.swiperslide .cssborder {
+  width: 60%;
+  margin: 2rem auto;
+  display: block;
 }
-.swiper-slide .cssdisplay {
-  width: 25%;
-  margin: 0rem 0 0 1rem;
+.swiperslide .cssmargin {
+  width: 60%;
+  margin: 2rem auto;
+  display: block;
 }
-.swiper-slide .cssposition {
+.swiperslide .cssdisplay {
+  width: 60%;
+  margin: 2rem auto;
+  display: block;
+}
+.swiperslide .cssposition {
   width: 30%;
-  margin: 0.5rem 0 0 1rem;
+  margin: 2rem auto;
+  display: block;
 }
 .colors {
   width: 45%;
@@ -123,17 +132,17 @@ p {
   gap: 1rem;
 }
 
-.swiper-slide .container ol li {
+.swiperslide .container ol li {
   /* width: 100%; */
   margin: 1rem;
   font-size: 20px;
 }
-.swiper-slide .container ol {
+.swiperslide .container ol {
   /* width: 100%; */
   margin: 1rem;
 }
 .css_backgrounds {
-  margin: auto;
+  margin: 2rem auto;
   width: 80%;
   height: 78%;
   background: url("https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png");
@@ -182,12 +191,15 @@ p {
 }
 .codeeditor {
   font-size: 20px;
+  margin-bottom: 3rem;
 }
 .codeeditor_addcsscode {
-  font-size: 17px;
+  font-size: 20px;
+  margin-bottom: 3rem;
 }
 .codeeditor_addcsscodelarge {
-  font-size: 14px;
+  font-size: 20px;
+  margin-bottom: 3rem;
 }
 .next {
   position: absolute;
@@ -201,7 +213,27 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  .codeeditor {
+  .container h1 {
+    margin: 0.5rem;
+    font-size: 1.6rem;
+  }
+  .swiperslide ul li {
+    margin: 1rem;
+    font-size: 17px;
+  }
+  .swiperslide .container ol li {
+    /* width: 100%; */
+    margin: 1rem;
+    font-size: 17px;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+    /* position: relative; */
+  }
+  /* .codeeditor {
     font-size: 10px;
   }
   .codeeditor_addcsscode {
@@ -210,21 +242,21 @@ p {
   .codeeditor_addcsscodelarge {
     font-size: 10px;
   }
-  .swiper-slide img {
+  .swiperslide img {
     display: block;
     object-fit: cover;
   }
-  .swiper-slide ul li {
+  .swiperslide ul li {
     margin: 1rem;
     font-size: 15px;
     text-align: justify;
   }
-  .swiper-slide ol li {
+  .swiperslide ol li {
     margin: 1rem;
     font-size: 15px;
     text-align: justify;
   }
-  .swiper-slide {
+  .swiperslide {
     background: linear-gradient(
       to top,
       rgb(156, 163, 175),
@@ -244,7 +276,7 @@ p {
   .colors {
     font-size: medium;
   }
-  .swiper-slide .container ol li {
+  .swiperslide .container ol li {
     width: 87%;
     margin: 1rem;
     font-size: 15px;
@@ -254,39 +286,44 @@ p {
     margin: 0.5rem;
     font-size: 1.5rem;
   }
-  .swiper-slide .img_css {
+  .swiperslide .img_css {
     width: 50%;
     margin: 1rem 0 0 1rem;
   }
-  .swiper-slide .history {
+  .swiperslide .history {
     width: 80%;
     margin: 1rem 0 0 1rem;
   }
-  .swiper-slide .css_syntax {
+  .swiperslide .css_syntax {
     width: 80%;
     margin: 1rem 0 0 1rem;
   }
-  .swiper-slide .addcss_img {
+  .swiperslide .addcss_img {
     width: 85%;
-    margin: 2rem 0 0 1rem;
+    margin: 2rem auto;
+    display: block;
   }
-  .swiper-slide .cssdisplay {
+  .swiperslide .cssdisplay {
     width: 85%;
-    margin: 2rem 0 0 1rem;
+    margin: 2rem auto;
+    display: block;
   }
-  .swiper-slide .cssposition {
+  .swiperslide .cssposition {
     width: 80%;
   }
-  .swiper-slide .css_color {
+  .swiperslide .css_color {
     width: 80%;
-    margin: 2rem 0 0 1rem;
+    margin: 2rem auto;
+    display: block;
   }
-  .swiper-slide .cssborder {
+  .swiperslide .cssborder {
     width: 80%;
-    margin: 2rem 0 0 1rem;
+    margin: 2rem auto;
+    display: block;
   }
-  .swiper-slide .cssmargin {
+  .swiperslide .cssmargin {
     width: 80%;
-    margin: 2rem 0 0 1rem;
-  }
+    margin: 2rem auto;
+    display: block;
+  } */
 }

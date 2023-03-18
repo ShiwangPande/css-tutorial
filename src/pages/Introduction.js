@@ -1,34 +1,36 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/pagination";
 import { AiFillCaretLeft } from "react-icons/ai";
 import { AiFillCaretRight } from "react-icons/ai";
 import "./Home.css";
 import css from "../img/creative-css3-tutorials.webp";
 import history from "./img/csshistory.png";
 import { Link } from 'react-router-dom'
+
+import Footer from './Footer';
 // import required modules
 import { Mousewheel, Pagination } from "swiper";
 function Home() {
   return (
-    <div className='home'>
-      <>
-        <Swiper
-          direction={"vertical"}
-          slidesPerView={"auto"}
-          // spaceBetween={3}
-          mousewheel={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Mousewheel, Pagination]}
-          className="mySwiper"
+    <>
+      <div className='home'>
+        <div className="swipers"
+        // direction={"vertical"}
+        // slidesPerView={"auto"}
+        // // spaceBetween={3}
+        // mousewheel={true}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        // modules={[Mousewheel, Pagination]}
+        // className="mySwiper"
         >
-          <SwiperSlide>
+          <div className="swiperslide">
             <div className="container">
               <h1>What is CSS?</h1>
               <hr />
@@ -47,9 +49,9 @@ function Home() {
             <div className="next">
               <Link to="/Position"><AiFillCaretLeft /></Link> <Link to="/Syntax"><AiFillCaretRight /></Link>
             </div>
-          </SwiperSlide>
+          </div>
 
-          <SwiperSlide>
+          <div className="swiperslide">
             <div className="container">
               <h1>History of CSS</h1>
               <hr />
@@ -65,8 +67,8 @@ function Home() {
             </div>
 
 
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
             <div className="container">
               <h1>History of CSS</h1>
               <hr />
@@ -79,8 +81,8 @@ function Home() {
                 <li> CSS2 also introduced the concept of media types, allowing developers to define different styles for different types of devices, such as screen, print, and handheld devices.   </li>
               </ul>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
             <div className="container">
               <h1>How CSS works?</h1>
               <hr />
@@ -99,10 +101,11 @@ function Home() {
               </div>
             </div>
 
-          </SwiperSlide>
-        </Swiper>
-      </>
-    </div >
+          </div>
+        </div>
+        <Footer />
+      </div >
+    </>
   );
 }
 

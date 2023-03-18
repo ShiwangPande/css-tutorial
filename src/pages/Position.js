@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import styled from "styled-components";
 import "./Home.css";
+import Footer from './Footer';
 import cssposition from "./img/cssposition.png";
 import { Link } from 'react-router-dom'
 import { AiFillCaretLeft } from "react-icons/ai";
@@ -65,18 +66,8 @@ function Position() {
   return (
     <div className="home">
       <>
-        <Swiper
-          direction={"vertical"}
-          slidesPerView={"auto"}
-          // spaceBetween={3}
-          mousewheel={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Mousewheel, Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
+      <div className="swiper">
+          <div className="swiperslide">
             <div className="container">
               <h1>CSS Layout - The position Property </h1>
               <hr />
@@ -105,8 +96,8 @@ function Position() {
             <div className="next">
               <Link to="/display"><AiFillCaretLeft /></Link> <Link to="/"><AiFillCaretRight /></Link>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
 
             <div className="container">
               <h1>position: static; </h1>
@@ -146,8 +137,8 @@ function Position() {
                 />
               </ul>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
 
             <div className="container">
               <h1>position: fixed;</h1>
@@ -193,8 +184,8 @@ function Position() {
                 />
               </ul>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
 
             <div className="container">
               <h2>position: absolute;</h2>
@@ -226,9 +217,9 @@ function Position() {
                 </li>
               </ul>
             </div>
-          </SwiperSlide>
+          </div>
 
-          <SwiperSlide>
+          <div className="swiperslide">
 
             <div className="container">
               <h2>position: absolute;</h2>
@@ -249,8 +240,8 @@ function Position() {
                 </li>
               </ul>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
 
             <div className="container">
               <h2>position: sticky;</h2>
@@ -295,8 +286,9 @@ function Position() {
             <div className="next">
               <Link to="/display"><AiFillCaretLeft /></Link> <Link to="/"><AiFillCaretRight /></Link>
             </div>
-          </SwiperSlide>
-        </Swiper>
+          </div>
+        </div>
+        <Footer />
       </>
     </div>
   );

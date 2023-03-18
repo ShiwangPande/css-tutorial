@@ -7,19 +7,26 @@
   font-family: "Lato", sans-serif;
 }
 
+body {
+  /* background: #060b26; */
+  /* color: #fff; */
+}
+
 .home,
 .reports,
 .products {
-  display: flex;
-  height: 87vh;
+  /* display: flex; */
+  /* height: 87vh; */
+  background: linear-gradient(to top, #020e22, #152157, #060b26);
   align-items: center;
   justify-content: center;
   font-size: 3rem;
   position: absolute;
-  width: calc(100% - 260px);
-  right: 0;
+  width: calc(100% - 340px);
+  right: 80px;
   padding-right: 100px;
-  background-color: #060b26;
+  filter: drop-shadow(10px 10px 10px #060b26);
+  /* background-color: #060b26; */
 }
 @media screen and (max-width: 768px) {
   .home,
@@ -27,6 +34,7 @@
   .products {
     width: 100%;
     padding-right: 0;
+    right: 0;
     background-color: none;
   }
 }

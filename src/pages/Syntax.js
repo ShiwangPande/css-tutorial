@@ -16,22 +16,13 @@ import { Link } from 'react-router-dom'
 import { AiFillCaretLeft } from "react-icons/ai";
 import { AiFillCaretRight } from "react-icons/ai";
 import { Mousewheel, Pagination } from "swiper";
+import Footer from './Footer';
 function Syntax() {
   return (
     <div className="home">
       <>
-        <Swiper
-          direction={"vertical"}
-          slidesPerView={"auto"}
-          // spaceBetween={3}
-          mousewheel={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Mousewheel, Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
+        <div className="swiper">
+          <div className="swiperslide">
             <div className="container">
               <h1>Basic CSS Syntax</h1>
               <hr />
@@ -55,8 +46,8 @@ function Syntax() {
             <div className="next">
               <Link to="/"><AiFillCaretLeft /></Link> <Link to="/addCss"><AiFillCaretRight /></Link>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
             {" "}
             <div className="container">
               <h1>Basic CSS Syntax</h1>
@@ -76,8 +67,8 @@ function Syntax() {
                 <Syntaxcode />
               </ul>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
             <div className="container">
               <h1>Comment CSS Syntax</h1>
               <hr />
@@ -95,8 +86,8 @@ function Syntax() {
                 <Commentcode />
               </ul>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
             <div className="container">
               <h1>How CSS works?</h1>
               <hr />
@@ -135,8 +126,8 @@ function Syntax() {
                 </li>
               </ul>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
             <div className="container">
               <h1>CSS Syntax</h1>
               <hr />
@@ -166,8 +157,8 @@ function Syntax() {
               </ul>
               <Cssparacode />
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
             <div className="container">
               <h1>Types of CSS Selector</h1>
               <hr />
@@ -200,8 +191,8 @@ function Syntax() {
                 </li>
               </ol>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
             <div className="container">
               <h1>Css Heading Syntax</h1>
               <hr />
@@ -225,8 +216,8 @@ function Syntax() {
                 </li>{" "}
               </ul>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
             <div className="container">
               <h1>Css Fontsize</h1>
               <hr />
@@ -262,9 +253,10 @@ function Syntax() {
             <div className="next">
               <Link to="/"><AiFillCaretLeft /></Link> <Link to="/addCss"><AiFillCaretRight /></Link>
             </div>
-          </SwiperSlide>
+          </div>
 
-        </Swiper>
+        </div>
+        <Footer />
       </>
     </div>
   );

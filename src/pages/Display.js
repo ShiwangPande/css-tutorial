@@ -13,6 +13,7 @@ import styled from "styled-components";
 import "./Home.css";
 import cssdisplay from "./img/cssdisplay.png";
 // import required modules
+import Footer from './Footer';
 import { Link } from 'react-router-dom'
 import { AiFillCaretLeft } from "react-icons/ai";
 import { AiFillCaretRight } from "react-icons/ai";
@@ -35,18 +36,8 @@ function Display() {
     return (
         <div className="home">
             <>
-                <Swiper
-                    direction={"vertical"}
-                    slidesPerView={"auto"}
-                    // spaceBetween={3}
-                    mousewheel={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Mousewheel, Pagination]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
+                <div className="swipers">
+                    <div className="swiperslide">
                         {" "}
 
                         <div className="container">
@@ -112,8 +103,8 @@ function Display() {
                         <div className="next">
                             <Link to="/margin"><AiFillCaretLeft /></Link> <Link to="/position"><AiFillCaretRight /></Link>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>Block-level Elements</h1>
@@ -140,8 +131,8 @@ function Display() {
 
                             </ul>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>Inline Elements</h1>
@@ -172,8 +163,8 @@ function Display() {
                             </ul>
 
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>Display: none;</h1>
@@ -208,9 +199,10 @@ function Display() {
                         <div className="next">
                             <Link to="/margin"><AiFillCaretLeft /></Link> <Link to="/position"><AiFillCaretRight /></Link>
                         </div>
-                    </SwiperSlide>
+                    </div>
 
-                </Swiper>
+                </div>
+                <Footer />
             </>
         </div>
     );

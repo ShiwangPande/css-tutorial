@@ -8,6 +8,7 @@ import "prismjs/components/prism-javascript";
 import "prismjs/themes/prism.css";
 // Import Swiper styles
 import "swiper/css";
+import Footer from './Footer';
 import "swiper/css/pagination";
 import cssmargin from "./img/css margin.png";
 import "./Home.css";
@@ -28,18 +29,8 @@ function Margin() {
     return (
         <div className="home">
             <>
-                <Swiper
-                    direction={"vertical"}
-                    slidesPerView={"auto"}
-                    // spaceBetween={3}
-                    mousewheel={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Mousewheel, Pagination]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
+            <div className="swiper">
+                    <div className="swiperslide">
                         <div className="container">
                             <h1>CSS Margins</h1>
                             <hr />
@@ -63,8 +54,8 @@ function Margin() {
                         <div className="next">
                             <Link to="/border"><AiFillCaretLeft /></Link> <Link to="/display"><AiFillCaretRight /></Link>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
                         {" "}
 
                         <div className="container">
@@ -118,8 +109,8 @@ function Margin() {
                                 }}
                             />
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>Margin - Shorthand Property </h1>
@@ -153,8 +144,8 @@ function Margin() {
                                 </li>
                             </ul>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>Margin - Shorthand Property </h1>
@@ -189,9 +180,10 @@ function Margin() {
                         <div className="next">
                             <Link to="/border"><AiFillCaretLeft /></Link> <Link to="/display"><AiFillCaretRight /></Link>
                         </div>
-                    </SwiperSlide>
+                    </div>
 
-                </Swiper>
+                </div>
+                <Footer />
             </>
         </div>
     );

@@ -16,6 +16,7 @@ function App() {
     <>
       <Router>
         <Navbar />
+
         <Switch>
           <Route path='/' exact component={Intro} />
           <Route path='/Syntax' component={Syntax} />
@@ -26,7 +27,10 @@ function App() {
           <Route path='/display' component={Display} />
           <Route path='/position' component={Position} />
         </Switch>
+
+     
       </Router>
+
     </>
   );
 }

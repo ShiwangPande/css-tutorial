@@ -10,6 +10,7 @@ import "prismjs/themes/prism.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import cssborder from "./img/cssborder.png";
+import Footer from './Footer';
 import "./Home.css";
 import { Link } from 'react-router-dom'
 import { AiFillCaretLeft } from "react-icons/ai";
@@ -55,18 +56,8 @@ function Border() {
     return (
         <div className="home">
             <>
-                <Swiper
-                    direction={"vertical"}
-                    slidesPerView={"auto"}
-                    // spaceBetween={3}
-                    mousewheel={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Mousewheel, Pagination]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
+                <div className="swipers">
+                    <div className="swiperslide">
                         <div className="container">
                             <h1>CSS Borders</h1>
                             <hr />
@@ -100,8 +91,8 @@ function Border() {
                         <div className="next">
                             <Link to="/color"><AiFillCaretLeft /></Link> <Link to="/margin"><AiFillCaretRight /></Link>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
                         {" "}
 
                         <div className="container">
@@ -131,8 +122,8 @@ function Border() {
                                 </ul>
                             </ul>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
                         {" "}
 
                         <div className="container">
@@ -172,8 +163,8 @@ function Border() {
                                 </ul>
                             </ul>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>History of CSS</h1>
@@ -208,8 +199,8 @@ function Border() {
                                 />  </li>
                             </ul>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>CSS Border Width</h1>
@@ -240,8 +231,8 @@ function Border() {
                                 />
                             </ul>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>CSS Border Width</h1>
@@ -279,8 +270,8 @@ function Border() {
                                 </li>
                             </ul>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
+                    </div>
+                    <div className="swiperslide">
 
                         <div className="container">
                             <h1>CSS Border Color</h1>
@@ -326,8 +317,9 @@ function Border() {
                         <div className="next">
                             <Link to="/color"><AiFillCaretLeft /></Link> <Link to="/margin"><AiFillCaretRight /></Link>
                         </div>
-                    </SwiperSlide>
-                </Swiper>
+                    </div>
+                </div>
+                <Footer />
             </>
         </div>
     );

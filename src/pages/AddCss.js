@@ -9,6 +9,7 @@ import 'prismjs/themes/prism.css'; //Example style, you can use another
 import "./Home.css"
 // Import Swiper styles
 import "swiper/css";
+import Footer from './Footer';
 import "swiper/css/pagination";
 import addcss from "./img/addcss.png"
 import Cssfontsize from "./cssfontsize";
@@ -89,20 +90,10 @@ function AddCss() {
     }`
   );
   return (
-    <div className="home">
-      <>
-        <Swiper
-          direction={"vertical"}
-          slidesPerView={"auto"}
-          // spaceBetween={3}
-          mousewheel={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Mousewheel, Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
+    <>
+      <div className="home">
+        <div className="swiper">
+          <div className="swiperslide">
 
             <div className="container">
               <h1>How to Add CSS?</h1>
@@ -126,8 +117,8 @@ function AddCss() {
             <div className="next">
               <Link to="/Syntax"><AiFillCaretLeft /></Link> <Link to="/color"><AiFillCaretRight /></Link>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
             {" "}
 
             <div className="container">
@@ -160,8 +151,8 @@ function AddCss() {
                 />
               </ul>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
 
             <div className="container">
               <h1>External CSS</h1>
@@ -188,9 +179,9 @@ function AddCss() {
                 />
               </ul>
             </div>
-          </SwiperSlide>
+          </div>
 
-          <SwiperSlide>
+          <div className="swiperslide">
 
             <div className="container">
               <h1>Internal CSS</h1>
@@ -223,9 +214,9 @@ function AddCss() {
                 }}
               />
             </div>
-          </SwiperSlide>
+          </div>
 
-          <SwiperSlide>
+          <div className="swiperslide">
 
             <div className="container">
               <h1> Inline CSS</h1>
@@ -271,8 +262,8 @@ function AddCss() {
                 </li>
               </ul>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div className="swiperslide">
 
             <div className="container">
 
@@ -311,10 +302,12 @@ function AddCss() {
             <div className="next">
               <Link to="/Syntax"><AiFillCaretLeft /></Link> <Link to="/color"><AiFillCaretRight /></Link>
             </div>
-          </SwiperSlide>
-        </Swiper>
-      </>
-    </div>
+          </div>
+        </div>
+        <Footer />
+      </div>
+
+    </>
   );
 }
 
