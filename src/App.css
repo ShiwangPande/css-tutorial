@@ -16,13 +16,17 @@
   justify-content: center;
   font-size: 3rem;
   position: absolute;
-  width: calc(100% - 250px);
+  width: calc(100% - 260px);
   right: 0;
+  padding-right: 100px;
+  background-color: #060b26;
 }
 @media screen and (max-width: 768px) {
   .home,
   .reports,
   .products {
     width: 100%;
+    padding-right: 0;
+    background-color: none;
   }
 }
